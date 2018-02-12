@@ -16,6 +16,7 @@ length' xs = sum [1 | _ <- xs]
 
 combinations x y = [ x*y | x <- x, y <- y]
 
+removeNonUppercase :: String -> String
 removeNonUppercase st = [ c | c <- st, c `elem` ['A'..'Z']]
 
 triangles = [ (a,b,c) | c <- [1..10], b <- [1..10], a <- [1..10] ]
